@@ -1,0 +1,129 @@
+@charset "UTF-8";
+
+:root {
+    --pricipal: #191983; 
+    --secundaria: #48a8ac;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--pricipal);
+    display: flex;
+    flex-flow: row wrap;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--secundaria);
+    text-align: center;
+    margin: 50px;
+}
+
+main.jaCadastrados{
+    width: 320px;
+    height: auto;
+    box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.205);
+}
+
+main {
+    background-color: white;
+    padding: 20px;
+    padding-bottom: 0px;
+    width: 500px;
+    height: auto;
+    margin: 50px auto;
+    border-radius: 25px;
+    position: relative;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.233);
+    display: flex;
+}
+
+h2 {
+    color: var(--pricipal);
+    margin-top: 0px;
+    margin-bottom: -15px;
+
+}
+
+table {
+    position: relative;
+}
+
+tr.valores {
+    font-size: 2em;
+    position: absolute;
+    left: 170px;
+    top: 55px;
+}
+
+tr#valor {
+    font-size: 2em;
+    position: absolute;
+    left: 300px;
+    top: 0px;
+}
+
+p {
+    font-size: .8em;
+}
+
+p.dataHora {
+    width: 200px;
+}
+
+p.valor {
+    font-size: .5em;
+}
+
+td {
+    padding: 0px 0px 25px 0px;
+}
+
+p#discrição {
+    font-size: 0.5em;
+}
+
+img#lixeira {
+    position: absolute;
+    right: 50px;
+    top: 150px; 
+}
+
+img#lixo {
+    position: absolute;
+    right: 80px;
+    top: 150px; 
+}
+
+#lixo:hover, #lixeira:hover {
+    background-color: rgb(211, 121, 121);
+    border-radius: 50%;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.253);
+    padding: 5px;
+    cursor: pointer;
+}
+
+button {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--secundaria);
+    color: white;
+    padding: 3px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.26);
+    font-weight: bolder;
+    width: 100px;
+    position: absolute;
+    right: -270px;
+    bottom: 29px;
+}
+
+button:hover {
+    background-color: #32c7cc;
+    box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.26);
+}

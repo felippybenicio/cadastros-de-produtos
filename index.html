@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cadastro e listagem de produto</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    
+</head>
+<body>
+    <h1>cadastro e listagem de produto</h1>
+
+    <form action="cadastrado.php" method="get">
+        <table>
+            <tr>
+                <td>
+                    <label for="nomeProduto">Nome do Produto:</label>
+                    <input type="text" name="nomeProduto" id="nomeProduto" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="descrição" id="descrição">Descrição do Produto:</label>
+                    <textarea name="descrição" id="descrição"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="valor">Valor do Produto:</label>
+                    <input type="number" step="0.1" name="valor" id="valor" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Disponivel para Venda:</p>
+                    <label for="nao">Sim</label>
+                    <input type="radio" value="Sim" name="disponibilidade" id="nao" class="clicado">
+                    <label for="sim">Não</label>
+                    <input type="radio" value="Não"
+                    name="disponibilidade" id="sim" class="clicado" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    
+                    <input type="submit" value="Cadastrar Produto" name="cadastrar" id="cadastrar" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="cadastrados()" id="cadastarados">produtos já cadastrados</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <script>
+        const form = document.getElementsByTagName('form')
+
+        function ignorarValidacaoEspecifica(event) {
+            event.preventDefault(); // Evita o comportamento padrão do botão
+            const form = document.getElementsByTagName('form')            
+            // Envia o formulário APENAS para o botão que ignora validação
+            form.submit();
+            
+            function cadastarados() {
+                
+                const paginaDeCadastrados = document.getElementById('cadastarados')
+
+                
+
+                paginaDeCadastrados.addEventListener('click', cadastarados)
+
+                window.location.href = 'jaEstaoCadastrados.php'
+            }
+        }
+
+        //mudar de pagina
+        
+
+        //selecionar
+        const sim = document.getElementById('sim')
+        const nao = document.getElementById('nao')
+
+        function interclarOpções() {
+            sim.classList.add('clicado')
+            nao.classList.remove('clicado')
+        }
+
+    </script>
+</body>
+</html>

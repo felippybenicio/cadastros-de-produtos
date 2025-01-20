@@ -1,0 +1,5 @@
+null
+null
+{"produto":"shampoo","descricao":"tghg","valor":"44","disponibilidade":"N\u00e3o"}
+{"produto":"condicionador","descricao":"k","valor":"444","disponibilidade":"Sim"}
+{"produto":"shampoo","descricao":"tghg","valor":"44","disponibilidade":"N\u00e3o"}

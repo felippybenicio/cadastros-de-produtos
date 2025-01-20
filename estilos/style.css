@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+:root {
+    --pricipal: #191983; 
+    --secundaria: #48a8ac;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--pricipal);
+    display: flex;
+    flex-flow: column wrap;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--secundaria);
+    text-align: center;
+    margin: 50px auto;
+    margin-bottom: 0px;
+    height: 45px;
+}
+
+form, main {
+    background-color: white;
+    padding: 20px;
+    width: 500px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 25px;
+    
+}
+
+td {
+    padding: 10px;
+}
+
+input#nomeProduto {
+    width: 332px;
+}
+
+label {
+    padding-bottom: 25px;
+}
+
+textarea#descrição {
+    width: 468px;
+    height: 60px;
+    border-radius: 10px;
+}
+
+input#valor {
+    width: 60px;
+}
+
+p {
+    margin-bottom: 0px;
+}
+
+label#nao {
+    margin: 5px;
+}
+
+button {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--secundaria);
+    color: white;
+    margin-left: 368px;
+    padding: 3px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.26);
+    font-weight: bolder;
+    width: 100px;
+}
+
+button:hover {
+    background-color: #32c7cc;
+    box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.26);
+}
+
+#cadastrar {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--secundaria);
+    color: white;
+    margin-left: 10px;
+    margin-top: 25px;
+    padding: 8px 171px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.26);
+    font-weight: bolder;
+}
+
+input#cadastrar:hover {
+    background-color: #32c7cc;
+    box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.26);
+}
+
+input.clicado {}
+
+@media screen and (max-width: 570px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    form {
+        width: 300px;
+        height: 384px;
+        
+    }
+
+    input#nomeProduto {
+        width: 145px;
+    }    
+
+    label#descrição {
+        display: block;
+        padding: 0px;
+    }
+
+    textarea#descrição {
+        width: 281px;
+    }
+
+    input#cadastrar {
+        padding: 8px 78px;
+    }
+
+    button {
+        position: absolute;
+        left: -95px;
+    }
+    
+}
